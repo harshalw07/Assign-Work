@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <div class="main">
+
+        <div class="cont">
+            <div class="circle"></div> <span class="line"></span>
+            <div class="circle"></div> <span class="line"></span>
+            <div class="circle"></div> <span class="line"></span>
+            <div class="circle"><img src="rupee-sign-solid.svg" alt="" class="icon"> </div> 
+        </div>
+
+        <h3 class="heading">Basic Details</h3>
+        <div class="basic box">
+            <form action="">
+    
+                <div class="container">
+
+                    <div class="input-box">
+                        <label for="pname">Project name <span style="color: red;">*</span></label> <br>
+                        <input required type="text" id="pname" name="pname">
+                    </div>
+        
+                    
+                    <div class="input-box">
+                        <label for="pcode">Project Code</label> <br>
+                        <input type="text" id="pcode" name="pcode">
+                    </div>
+        
+                    
+                    <div class="input-box">
+                        <label for="pdate">Project Start Date</label> <br>
+                        <input type="date" id="pdate" name="pdate">
+                    </div>
+        
+                    <div class="input-box">
+                        <label for="pend">Project End Date</label> <br>
+                        <input type="date" id="pend" name="pend">
+                    </div>
+
+                    
+                </div>
+
+                <!-- <div class="input-box input-img">
+                    <label for="pimg">Project End Date</label> <br>
+                    <input type="file" id="pimg" name="pimg">
+                </div> -->
+                <div class="drag-area">
+                    <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
+                    <!-- <header>Drag & Drop to Upload File</header> -->
+                    
+                    <button>Upload Project Logo</button>
+                    <input type="file" hidden>
+                  </div>
+    
+    
+            </form>
+        </div>
+        
+        
+        <h3 class="heading">Project Details</h3>
+        <div class="project box">
+            <div class="input-box">
+                <label for="langt">Longitude</label> <br>
+                <input required type="text" id="langt" name="langt">
+            </div>
+
+            
+            <div class="input-box">
+                <label for="latit">Latitude</label> <br>
+                <input type="text" id="latit" name="latit">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
